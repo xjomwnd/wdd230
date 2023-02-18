@@ -1,0 +1,248 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+ 
+@xjomwnd 
+xjomwnd
+/
+WDD-230-1
+Public
+Fork your own copy of xjomwnd/WDD-230-1
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+WDD-230-1/Lesson06/home.html
+@xjomwnd
+xjomwnd commit
+Latest commit 3521fbb 1 hour ago
+ History
+ 1 contributor
+217 lines (205 sloc)  9.1 KB
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Home Page</title>
+    <meta name="description" content="Assignment portal for Joel Ndiba Mwaura, WDD-230-1: Web Frontend Development, Brigham Young University - Idaho" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script defer src="js/weather.js"></script>
+</head>
+<body>
+  <span id="banner"></span>
+    <header> 
+    <div class="headertop"> 
+    <div class="logo">    
+        <picture> 
+          <img src="images/area-logo.png"
+          alt="Preston Area Chamber logo" width="500" height="280">
+        </picture>
+      </div>  
+      </div>
+    <div class="social">
+      <a href="https://www.facebook.com/" target="_blank">
+      <img src="images/facebook.png" alt="Facebook Icon" width="48" height="48">
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="images/instagram-.png" alt="Instagram Icon" width="48" height="48">
+      </a> 
+    </div> 
+      <div class="headings">
+      <section>
+        <h2>Chamber of Commerce</h2>
+          <h2>Preston Area</h2>
+      </section>
+    <div class="menu"></div>
+      <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+          <ul id="primaryNav">
+            <li><a href="https://xjomwnd.github.io/WDD-230-1/Lesson06/home.html">Home</a></li>
+            <li><a href="https://xjomwnd.github.io/WDD-230-1/Lesson09/directory/directory.html">Directory</a></li>
+            <li><a href="https://xjomwnd.github.io/WDD-230-1/Lesson07/discover/discover.html">Discover</a></li>
+            <li><a href="https://xjomwnd.github.io/WDD-230-1/Lesson08/join/join.html">Join</a></li>
+            <li><a href="https://xjomwnd.github.io/WDD-230-1/Lesson11/contact.html">Contact</a></li>
+      </ul>
+      </nav>
+    </div>
+    <fieldset>
+      <div class="date1">
+        <p class="date1"><span id="date1"><script src="js/index.js"></script></span></p>    
+      </div>
+      </fieldset> 
+</header> 
+<main>
+    <div class="hero">
+      <h1 class="welcome">Welcome to Preston Area Chamber of Commerce</h1>
+      <div class="herodiv">
+        <picture>
+          <source media="(min-width: 1028px)" srcset="images/wdd230-org-large800x800.jpg">
+          <source media="(min-width: 550px)" srcset="images/wdd230-org-medium1000x282.jpg">
+          <img src="images/wdd230-org-small550x155.jpg" alt="Welcome image for Preston Area Chamber of Commerce">
+        </picture>
+        <form style="display: inline" action="https://xjomwnd.github.io/WDD-230-1/Lesson08/join/join.html" method="get">
+          <button class="join">Join the Chamber</button>
+        </form>
+      </div>
+      <h2>Cache Valley - Logan</h2>
+      <img src="images/519-400x400.jpg" alt="Welcome image for Chamber Area">
+      <p>Cache Valley is a valley of northern Utah and southeast Idaho, United States, that includes the Logan metropolitan area.</p>
+      <br>
+      <p>About 80 miles north of Salt Lake City, the Cache Valley features a welcoming mountain atmosphere year-round. The city of Logan is known for its historic downtown and thriving theater scene (Read: A Local’s Guide to Logan).</p>
+      <form style="display: inline" action="https://www.visitutah.com/places-to-go/cities-and-towns/cache-valley" method="get">
+        <button class="cache-valley">Cache Valley - Logan</button>
+      </form>
+    </div>
+
+    <div class="event">
+      <h2>Ribbon Cutting</h2>
+
+      <p>The Diamond Shack</p>
+
+      <p>🌹 Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.<span class="linkMoreInfo">more info...</span></p>
+        <form style="display: inline" action="https://www.dominionpost.com/2019/12/10/the-shack-holds-ribbon-cutting-ceremony-for-new-bridge/" method="get">
+          <button class="event">Ribbon Cutting</button>
+        </form>
+    </div>
+    <div class="weather">
+      <h2>Weather</h2>
+      <div id="weather_top">
+          <h2><span id="temp"></span>&#8457;</h2>
+          <figure><img src="" alt="Temp Icon" id="weathericon" />
+              <figcaption></figcaption>
+          </figure>
+      </div>
+      <hr>
+      <p>Wind: <span id="wind"></span> MPH</p>
+      <p>Wind Chill: <span id="windchill"></span><span id="windDegree"></span></p>
+      </div>
+      
+     <div class="news">
+      <h2>News Release</h2>
+      <p>💎Preston Area Chamber of Commerce promotes the economic and commercial interests of Franklin County for the prosperity of members and the community. </p>
+      <p>We also promote business interests held in common with the extended region of Cache Valley.</p>
+
+    </div>
+
+    <div class="join">
+      <p>💎 Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+      <button class="join">
+        <a class="joinBox" href="https://xjomwnd.github.io/WDD-230-1/Lesson08/join/join.html">Join</a>
+      </button>
+      
+
+    </div>
+
+    <div class="spotlight">
+      <div class="spotlight1">
+        <h2>PRIME inc. Logistic</h2>
+        <picture>
+            <img src="images/trera.png" alt="Picture of a truck" width="96" height="96">
+        </picture>
+        <div class="box-center">
+         <h3>INTERMODAL FREIGHT SHIPPING & LOGISTICS</h3>
+         <p>We are America’s only flatbed and refrigerated intermodal carrier, and manage every aspect of your shipment, from departure to delivery.</p>
+          <form style="display: inline" action="https://www.primeinc.com/transportation-solutions/intermodal/?gclid=EAIaIQobChMI36GSjLaZ_AIVnoBQBh0L5As9EAAYAiAAEgJK2vD_BwE" method="get">
+            <button class="box-center">PRIME inc.</button>
+          </form>
+        </div>
+        <div class="box-bottom">
+          <p>www.primeinc.com</p>
+          <p>1-800-491-1240</p>
+        </div>
+      </div>
+
+      <div class="spotlight2">
+        <h2>Code Primera</h2>
+        <picture>
+            <img src="images/book.png" alt="Pictue of Coding" width="96" height="96">
+        </picture>
+        <div class="box-center">
+          <h3>Coding Time</h3>
+        </div>
+        <div class="box-bottom">
+          <p>contact@primera.com</p>
+          <p>+999-999-9999</p>
+        </div>
+          <form style="display: inline" action="https://www.primera.com/" method="get">
+            <button class="code-primera">Code Primera</button>
+          </form>
+      </div>
+
+      <div class="tree-planting">
+        <h2>Raskins Trees Nature Conservancy</h2>
+        <picture>
+            <img src="images/forest.png" alt="Picture of a tree" width="100" height="100">
+        </picture>
+        <div class="tree-planting">
+          <h3>Plant any Tree</h3>
+        </div>
+        <div class="tree-planting">
+          <p>01277849990</p>
+          
+            <form class="tree-planting" style="display: inline" action="https://www.nature.org/en-us/newsroom/idaho-tree-planting-begins-in-boise-national-forest/" method="get">
+              <button class="tree-planting">The Nature Conservancy</button>
+            </form>
+        </div>
+      </div>
+    </div> 
+<div>
+  <a href="//openweathermap.org/api"><span><input type="submit" value="Visit openweathermap" class="submitBtn"></span></a>
+</div>
+<hr>
+    <p class="last-update" id="lastModified"></p>
+      <div class="numberVisits">
+        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+    </div>
+  </main>
+     <footer>
+      <div class="imaagefooter">
+        <picture>
+          <img src="images/area-logo.png" alt="Preston Area Chamber Logo" width="500" height="280">
+        </picture>
+      </div>
+      <hr>  
+      <div class="namefooter">
+      <a href="https://www.google.com/maps/place/Preston,+ID+83263,+USA/@42.1466722,-112.0612386,10.25z/data=!4m5!3m4!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!8m2!3d42.0963133!4d-111.8766173">
+         <img src="images/location-.png" alt="Preston Area Chamber of commerce Location" width="4o" height="40" >
+         </a>
+         Location Map
+         <hr>
+      <p>&copy; <script>document.write(new Date().getFullYear())</script><br><span>| Joel Ndiba Mwaura | BYU-Idaho | WDD 230 Project |</span> 
+      </div> 
+      <hr> 
+      <div>
+        <p>Preston Area Chamber of Commerce</p>
+        <p>P.O. Box 552</p>
+        <p>Preston, ID  83263</p>
+        <p>208-852-6621</p>
+        <p>208-852-6711</p>
+        <p>www.prestonchamber.org</p> 
+      </div>
+    </footer>
+     <script src="js/lastVisit.js"></script>
+    <script src="js/last-modified.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/banner.js"></script>
+    <script src="js/hamburger.js"></script>
+<hr>
+<a href="https://xjomwnd.github.io/WDD-230-1/"><strong>Portal Page</strong></a>  
+</body>
+  </html>  
